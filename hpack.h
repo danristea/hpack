@@ -43,6 +43,7 @@ struct hpack_table
 	*hpack_table_new(size_t);
 void	 hpack_table_free(struct hpack_table *);
 size_t	 hpack_table_size(struct hpack_table *);
+int	 hpack_table_setsize(long, struct hpack_table *);
 
 struct hpack_headerblock
 	*hpack_decode(unsigned char *, size_t, struct hpack_table *);
